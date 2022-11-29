@@ -6,6 +6,7 @@ import HomeScreen from '../../screens/Home';
 import { useAppSelector } from '../../shared/hooks';
 import { RootState, store } from '../../store';
 import LoginScreen from '../../screens/Auth/login';
+import SignUpScreen from '../../screens/Auth/sign-up';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const MainLayout = () => {
       ) : (
         <>
           <Stack.Screen name="Login" component={LoginScreen}></Stack.Screen>
+          <Stack.Screen name="SignUp" component={SignUpScreen}></Stack.Screen>
         </>
       )}
     </Stack.Navigator>
